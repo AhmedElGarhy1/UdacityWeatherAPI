@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Personal Website</title>
+  </head>
+  <body>
+    <h2>Weather Journal App</h2>
+    <form action="" onsubmit="return false">
+      <input type="text" id="zip" placeholder="Enter Zip Code Here" required />
+      <textarea
+        id="feelings"
+        rows="10"
+        placeholder="What Is Your Feelings Now"
+        required
+      ></textarea>
+      <input type="submit" value="Generate" id="generate" />
+    </form>
+    <div class="entryHolder">
+      <h1></h1>
+      <p>
+        Today's Date: <span id="date"></span><br />
+        The Temperature: <span id="temp"></span><br />
+        Your Feeling: <span id="content"></span>
+      </p>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
