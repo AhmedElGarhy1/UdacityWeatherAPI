@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(Express.static("demo"));
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));
 
